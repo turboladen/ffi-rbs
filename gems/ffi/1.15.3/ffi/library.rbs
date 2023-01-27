@@ -30,7 +30,7 @@ module FFI
 
     def function_names: (_ToS name, Array[FFI::Type] arg_types) -> Array[String]
 
-    def typedef: (FFI::DataConverter | Symbol | FFI::Type old, Symbol add, ?Symbol? ?info) -> (FFI::Enum | FFI::Type)
+    def typedef: (FFI::DataConverter | Symbol | FFI::Type old, Symbol add, ?Symbol? info) -> (FFI::Enum | FFI::Type)
 
     def enum:
       (Symbol name, Array[Symbol | Integer] values)                        -> FFI::Enum
