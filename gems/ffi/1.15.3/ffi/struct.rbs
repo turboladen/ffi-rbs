@@ -10,6 +10,7 @@ module FFI
     def self.in: () -> FFI::Type::Mapped
     def self.layout:
       (*Symbol | Integer args) -> FFI::StructLayout
+      | (Array[Symbol | Integer] args) -> FFI::StructLayout
 
     def self.members: () -> Array[Symbol]
     def self.offset_of: (Symbol name) -> Numeric
